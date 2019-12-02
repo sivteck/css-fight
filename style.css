@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+}
+
+nav {
+  background: greenyellow;
+  color: teal;
+  margin: 2px;
+}
+
+.navItem {
+  display: inline;
+}
+
+#title {
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 2px;
+  transition: background 1s ease;
+}
+
+#title:hover {
+  background: orange;
+}
+
+/* drop menu */
+
+#dropmenu {
+  display: inline-block;
+}
+
+#drop {
+  border: 1px solid blue;
+  margin: 2px;
+}
+
+#dropmenu:hover #dropitems {
+  background: violet;
+  display: block;
+}
+
+#dropitems {
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+}
+
+.drops:hover {
+  color: white;
+}
+
+/* animated drop menu */
+
+#dropmenu-animated {
+  display: inline-block;
+}
+
+#dropA {
+  border: 1px solid blue;
+  margin: 2px;
+}
+
+#dropmenu-animated:hover #dropitems-animated {
+  background: violet;
+  opacity: 1;
+  visibility: visible;
+  transform-origin: left top;
+  transform: scaleY(1);
+}
+
+#dropitems-animated {
+  border-radius: 5px;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  transform: scaleY(0);
+  transition: transform 0.5s, opacity 2s ease;
+}
+
+.dropsA:hover {
+  color: white;
+}
