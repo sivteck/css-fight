@@ -29,16 +29,21 @@ main {
 }
 
 header {
-  width: 600px;
+  width: 60vw;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .carousel img {
-  max-width: 600px;
+  max-width: 60vw;
   border-radius: 5px;
 }
 
 article {
-  width: 600px;
+  width: 60vw;
 }
 
 footer {
@@ -117,4 +122,23 @@ footer {
 
 .dropsA:hover {
   color: white;
+}
+
+#griddy {
+  top: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#divg {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#innerdiv {
+  background: beige;
 }

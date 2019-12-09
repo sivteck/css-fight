@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="./style.css" />
     <title></title>
   </head>
@@ -27,12 +28,52 @@
     </nav>
 
     <main>
+
+      <section id="griddy">
+        <div id="divg"> 
+          <div id="innerdiv">
+            Div 1 
+          </div>
+        </div>
+        <div id="divg"> 
+          <div id="innerdiv">
+            Div2
+          </div> </div>
+        <div id="divg"> 
+          <div id="innerdiv"> 
+            Div 3 
+          </div>
+        </div>
+        <div id="divg"> 
+          <div id="innerdiv">
+            Div 4
+          </div>
+        </div>
+      </section>
+
+      <script>
+        let divgs = document.querySelectorAll('#divg')
+        const griddy = document.getElementById('griddy')
+        divgs = Array.from(divgs)
+        let count = 0
+        setInterval(() => {
+          divgs.forEach((divg, ind) => {
+            const r = Math.random()*256
+            const g = Math.random()*256
+            const b = Math.random()*256
+            divg.style.background = `rgb(${r}, ${g}, ${b})`
+          })
+          count++
+        } , 1000)
+      </script>
+
       <header>
         <h1> Enjoy reading the article, this is a header </h1>
       </header>
 
       <section class="carousel">
         <img src="img/doggo.jpg" />
+        <img src="img/etna.jpg" />
       </section>
 
       <article>
